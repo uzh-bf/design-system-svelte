@@ -9,8 +9,15 @@ export default defineConfig({
   },
   plugins: [
     svelte({
+      include: '**/*.wc.svelte',
       compilerOptions: {
         customElement: true,
+      },
+    }),
+    svelte({
+      exclude: '**/*.wc.svelte',
+      compilerOptions: {
+        customElement: false,
       },
     }),
   ],
