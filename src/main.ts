@@ -1,2 +1,2 @@
-import './Clock.postcss'
+import './app.postcss'
 export * from './Clock.svelte'
